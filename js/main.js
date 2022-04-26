@@ -4,6 +4,10 @@ function getTableOfContents() {
         {
             label: "Week 1 Notes", 
             url: "week1/index.html"
+        },
+        {
+            label: "Week 2 Notes",
+            url:"week2/index.html"
         }
     ]  
     links.forEach(element => {
