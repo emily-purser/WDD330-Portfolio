@@ -1,0 +1,16 @@
+#requirement {
+    background-color:beige;
+    padding: 2em;
+    margin: 2em;
+}
+input {
+    background-color: #ffffe0;
+}
+.output {
+    font-size: large;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    
+}
