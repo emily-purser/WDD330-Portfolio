@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <title>WDD330 Portfolio</title>
+        <link href="/WDD330-Portfolio/css/styles.css" type="text/css" rel="stylesheet" media="screen">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="/WDD330-Portfolio/js/main.js">
+
+        </script>
+    </head>
+    <body>
+        <div id="wrapper"></div>
+            <header class="portfolio-header">
+                WDD 330 Portfolio
+            </header>
+            <div class="chapter-div">
+                <h1 class="notes-h1">Object Methods, this</h1>
+                <p class="notes-p">Methods are functions that are properties of objects.</p>
+                <p class="notes-p">The keyword 'this' is used to access the object before the 
+                dot. It is also evaluated at runtime. This means that we can reuse the same function
+                for different objects. It is also unbound. 
+                </p>
+                <p class="notes-p">Arrow functions don't have a 'this'.</p>
+            </div>
+            
+            <div class="chapter-div">
+                <h1 class="notes-h1">JavaScript: Novice to Ninja, Chapter 5: Objects</h1>
+                <p class="notes-p">The 'in' operator is used to see if an object has a method.</p>
+                <p class="notes-p">For in loops can be used to see all the methods an object has. 
+                    You can use the 'hasOwnProperty()' inside the for in loop to get only the methods 
+                    the object has not the ones that it inherits. You can also access the methods of an
+                    object by using 'Object.entries()'. This, however, returns an array. 
+                </p>
+                <p class="notes-p">To delete methods for an object, use the 'delete' keyword. For example, 
+                    delete superman.fly.
+                </p>
+                <p class="notes-p">Objects can be nested. To access them, use the property names in order.
+                    For example, jla.superman.name.
+                </p>
+                <p class="notes-p">Since objects are assigned by reference, if you try to make a clone of 
+                    one object, it will not work. The clone will just point to the original object. If you make
+                    changes to the original, it will change the clone as well.
+                </p>
+            </div>
+            <div class="chapter-div">
+                <h1 class="notes-h1">JavaScript: Novice to Ninja, Chapter 6: Document Object Model</h1>
+                <p class="notes-p">You can use the '.querySelectorAll()'' to get all HTML elements
+                    with a specific CSS Selector. If you just want one, you can use '.querySelector()'.
+                    You can even use other references instead of document.
+                </p>
+                <p class="notes-p">If you want to change the class name of an element, you need to use the 
+                    keyword className instead of class. However, this will override all the classes for that
+                    element. To avoid this, use classList instead. It has methods that make manipulating the
+                    class list easier. 
+                </p>
+                <p class="notes-p">To add an element using JavaScript, use the 'createElement' document 
+                    method. This creates an empty element. You will need to use 'createTextNode' to 
+                    add text to the element. To link the two together, you need to use '.appendChild()'.
+                    Or you can create the element and use the 'textContent' property to add text to the 
+                    element.
+                </p>
+                <p class="notes-p">'insertBefore()' lets you insert a new element above an existing element.
+                    There is no insertAfter method.
+                </p>
+                <p class="notes-p">To remove an element from the DOM, use the parentNode.removeChild(nodeToBeRemoved) 
+                    method. This returns a reference to the node removed.
+                </p>
+            </div>
+            <div class="chapter-div">
+                <h1 class="notes-h1">JavaScript: Novice to Ninja, Chapter 7: Events</h1>
+                <p class="notes-p">When using an Event Listener and referencing a named function, 
+                    you don't include the parenthesis. If you do, the function will be called when you 
+                    set the event listener instead of when the event happens. 
+                </p>
+                <p class="notes-p">You can prevent a default event from happening to an element. To do 
+                    this, use the preventDefault() event method.
+                </p>
+                <p class="notes-p">Event propagation is the order taht the events fire on each element. 
+                    With bubbling, it starts at the element clicked first then goes up to the root element.
+                    With capturing, however, it starts at the roo element and then goes down to the clicked
+                    element.
+                </p>
+                <p class="notes-p">The default is bubbling. To switch to capturing, set the third parameter
+                    of addEventListener to true. 
+                </p>
+                <p class="notes-p">To stop both from happening, use the event.stopPropagation() method to 
+                    stop bubbling and set the third parameter of addEventListener to true to false to stop 
+                    capturing.
+                </p>
+            </div>
+
+        </div>
+    </body>
+</html>
