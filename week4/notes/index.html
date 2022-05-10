@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <title>WDD330 Portfolio</title>
+        <link href="/WDD330-Portfolio/css/styles.css" type="text/css" rel="stylesheet" media="screen">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="/WDD330-Portfolio/js/main.js">
+
+        </script>
+    </head>
+    <body>
+        <div id="wrapper"></div>
+            <header class="portfolio-header">
+                WDD 330 Portfolio
+            </header>
+            <div class="chapter-div">
+                <h1 class="notes-h1">JavaScript: Novice to Ninja - Chapter 8 Forms</h1>
+                <p class="notes-p">Form objects have an Elements method. This method returns all the Elements
+                    in an HTML form.
+                </p>
+                <p class="notes-p">The placeholder attribute is useful for having text in an input field when
+                    the input is out of focus. It also will not have text when the input field does have focus. 
+                    However, this text is not a value and will not be submitted.
+                </p>
+                <p class="notes-p">You can set an initial value using HTML by adding a value attribute.</p>
+            </div>
+            <div class="chapter-div">
+                <h1 class="notes-h1">JavaScript: Novice to Ninja - Chapter 12 Object Oriented Programming</h1>
+                <p class="notes-p">Encapsulation is when the functionality of an object's methods is kept inside
+                    the object. Then you make the methods available to use the functionality.
+                </p>
+                <p class="notes-p"> Polymorphism is when the same process can be used for 
+                    different objects. This means objects can share methods. However, they can overide these shared
+                    methods with different implementations.
+                </p>
+                <p class="notes-p">Inheritance is when an object takes another that already exists and gains the methods
+                    and properties from that object. They also havve the ability to create new methods and properties.
+                </p>
+                <p class="notes-p">Constructor Function -> a function that defines the properties and methods of an object. 
+                    This is another way to create an object. However, it is preferable to use the class declarations even if 
+                    they are implementated the same way. 
+                </p>
+                <p class="notes-p">You can use the constructor property to make a copy of an object if you don't know what the 
+                    original constructor is.
+                </p>
+                <p class="notes-p">Static Methods -> methods using the static keyword. They are called by the class directly, 
+                    not instances of the class. So instances of the class don't have this static method.
+                </p>
+                <p class="notes-p">To add a new method to the original class declaration (the prototype), you can use the prototype 
+                    property. This property returns an object. The prototype is also an object and that means that we can use the 
+                    prototype property to add new properties to the prototype object. You can also do the same thing with methods. 
+                </p>
+                <p class="notes-p">You cannot reassign prototypes when declared with class declarations. However, this is possible 
+                    to do with constructor functions.
+                </p>
+                <p class="notes-p">Don't use arrays or objects as default values in a prototype. Any changes to these values will 
+                    be reflected in all instances of an object. 
+                </p>
+                <p class="notes-p">Sub-class (aka child class) -> a class that inherits from another class. You can do this by using 
+                    the keyword extends in the sub-class declaration. Then you use the word super() to get methods from the parent 
+                    class.
+                </p>
+                <p class="notes-p">If you want to add a property beside value, you will need to use the Object.defineProperty(object, 
+                    attributeToSet, {attributeValues}) method.
+                </p>
+            </div>
+            <div class="chapter-div">
+                <h1 class="notes-h1">JavaScript: Novice to Ninja - Chapter 15 Modular JavaScript</h1>
+                <p class="notes-p">Default Exports are single variables, functions, or classes in a module that can be imported without 
+                    having to be explicityly named.
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
