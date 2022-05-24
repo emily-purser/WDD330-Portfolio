@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Merriweather&display=swap');
+html {
+    font-family: 'Merriweather', serif;
+}
+#todoList {
+    border: 1px solid black;
+    margin: 3em;
+    margin-bottom: 0em;
+    padding: 0em;
+    list-style: none;
+}
+#todoList li {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 0em;
+    width: inherit;
+}
+#newTask, li {
+    width: 82%;
+    height: 3.05em;
+    background-color: lightyellow;
+    color: green;
+    font-family: 'Grape Nuts';
+    font-size: large;
+}
+
+#addButton {
+    width: 15%;
+    height: 2.55em;
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+    font-size: x-large;
+    background-color: white;
+    font-family: 'Merriweather', serif;
+}
+.header {
+    font-size: xxx-large;
+    font-family: 'Grape Nuts', cursive;
+    color: green;
+    text-align: center;
+}
+#listFooter {
+    display: flex;
+    flex-direction: row;
+    margin: 3em;
+    margin-top: 0em;
+    border: 2px solid black;
+    justify-content: space-around;
+    background: lightyellow;
+}
+.tasksLeft {
+    display: inline;
+    align-self: center;
+    margin-left: 0.25em;
+    margin-right:0.25em
+}
+#listFooter input {
+    display: inline;
+    height: 2.85em;
+    width: 8em;
+    margin: 0.25em;
+    background-color: white;
+    font-size: medium;
+    font-family: 'Merriweather', serif;
+}
+input#x {
+    height: inherit;
+    width: 4em;
+    border: none;
+    color: red;
+    font-size: large;
+    background: lightyellow;
+}
+input#x:hover, #listFooter input:hover, #addButton:hover {
+    background-color: rgba(244, 245, 178, 0.938);
+    color: green;
+}
+input[type="checkbox"] {
+    height: 2em;
+    width: 5em;
+}
+form {
+    margin: 3em;
+}

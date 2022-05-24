@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <title>WDD330 Portfolio</title>
+        <link href="styles.css" type="text/css" rel="stylesheet" media="screen">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="/WDD330-Portfolio/js/main.js">
+
+        </script>
+    </head>
+    <body>
+        <div id="wrapper"></div>
+            <h1 class="header">Todos</h1>
+            <ul class="todoList" id="todoList">
+                <li>
+                    <input type="checkbox">Task
+                    <input type="button" id="x" value="X">
+                </li>
+                <li>
+                    <input type="checkbox">Task
+                    <input type="button" id="x" value="X">
+                </li>
+                <li>
+                    <input type="checkbox">Task
+                    <input type="button" id="x" value="X">
+                </li>
+            </ul>
+            <div class="listFooter" id="listFooter">
+                <div class="tasksLeft" id="tasksLeft">3 Tasks Left</div>
+                <input type="button" id="allTasks" value="All">
+                <input type="button" id="active" value="Active">
+                <input type="button" id="completed" value="Completed">
+            </div>
+            <form >
+                <input type="text" id="newTask" placeholder="enter a task">
+                <input type="button" id="addButton" value="+">
+            </form>
+        </div>
+    </body>
+</html>
