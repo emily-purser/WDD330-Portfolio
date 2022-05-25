@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&family=Grape+Nuts&family=Merriweather&display=swap');
+.portfolio-header {
+    display: block;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-color: #b3e5fc;
+    color: #0277bd;
+    font-size: xx-large;
+    font-family: 'Coming Soon', cursive; 
+    text-align: center;
+}
+.main-list{
+    padding-top: 1em;
+    padding-bottom: 1em;
+
+}
+a{
+    color:black;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-family: 'Merriweather', serif;
+    
+}
+li{
+    color:black;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+a:hover{
+    color: #0277bd;
+}
+h2, h1 {
+    font-family: 'Coming Soon', cursive;
+    color: #0277bd;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+.notes-p, .notes-link{
+    margin: 1em;
+}
