@@ -69,6 +69,10 @@ function deleteTodo(key){
     todoList = newList;
     writeLS(key, todoList);
 }
+// function filterTodo(key, hidden=true){
+//     let todo = getTodos(key);
+//     return todo.filter(task => task.completed === hidden);
+// }
 
 //Todo Class
 export default class ToDo {
@@ -76,6 +80,9 @@ export default class ToDo {
         this.key = key;
         this.listElement = listElement;
         bindTouch('#addButton', this.addTodo.bind(this));
+        bindTouch('#allTasks', this.listTodo.bind(this));
+        bindTouch('#active', this.filterActive.bind(this));
+        bindTouch('#completed', this.filterCompleted.bind(this));
         this.listTodo();
     }
     addTodo(){
@@ -86,6 +93,7 @@ export default class ToDo {
         this.listTodo();
     }
     listTodo(hidden=true){
+        console.log('I am in hte listToDo method');
         renderTodoList(getTodos(this.key), this.listElement, this, hidden);
     }
     findTodo(id) {
@@ -112,5 +120,29 @@ export default class ToDo {
             console.log("I am after the delete todo statement");
             renderTodoList(todoList, this.listElement, this, true);
         }
+    }
+    filterActive(hidden = false){
+        let todos = getTodos(this.key);
+        console.log(todos);
+        let newList = [];
+        todos.forEach(todo => {
+            if(!todo.completed){
+                newList.push(todo);
+            }
+        });
+        console.log(newList);
+        renderTodoList(newList, this.listElement, this, true);
+    }
+    filterCompleted(hidden = true) {
+        let todos = getTodos(this.key);
+        console.log(todos);
+        let newList = [];
+        todos.forEach(todo => {
+            if(todo.completed){
+                newList.push(todo);
+            }
+        });
+        console.log(newList);
+        renderTodoList(newList, this.listElement, this, true);
     }
 }
