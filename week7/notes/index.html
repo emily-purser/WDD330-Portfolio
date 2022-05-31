@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <title>WDD330 Portfolio</title>
+        <link href="/WDD330-Portfolio/css/styles.css" type="text/css" rel="stylesheet" media="screen">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="/WDD330-Portfolio/js/main.js">
+
+        </script>
+    </head>
+    <body>
+        <div id="wrapper"></div>
+            <header class="portfolio-header">
+                Emily's WDD 330 Portfolio
+            </header>
+            <div class="chapter-div">
+                <h1 class="notes-h1">JavaScript: Novice to Ninja - Chapter 11 Further Functions</h1>
+                <p class="notes-p">Functions are first-class objects which means that they can have properties and methods.
+                </p>
+                <p class="notes-p">call() -> a method for all functions that can be used to set the value of this inside a function to 
+                    an object that is provided as the first argument. The first parameter is the value for this and the second is for any 
+                    other parameters the function itself needs. You can also use call() on a function that doesn't refer to this. You just 
+                    need to put null as the first parameter.
+                </p>
+                <p class="notes-p">You can add your own properties to your functions just like you can to other objects {square.description}.
+                </p>
+                <p class="notes-p"><strong>Memoziation -></strong>result caching. So when you have a function that takes a lot to compute the 
+                    answer, you can use this to get the answer from the cache property instead. 
+                </p>
+                <p class="notes-p"><strong>Immediately Invoked Function Express (IFFE) -></strong> An anonymous function taht is invoked as soon 
+                    as it's defined. You can do this by placing the declaration in parenthesis and then some empty parenthesis directly after the 
+                    declaration. This can be great for function you need to be initailized, like a welcome message when the page loads.
+                </p>
+                <p class="notes-p">To make a function available to call, define, and rewrite itself, you need to add an anonymous function inside the 
+                    function and assign it to a variable that has the same name as the function. Anything inside that anonymous function will rewrite 
+                    what was in the original starting on the seconde time it is called. However, if this entire function is assigned to another variable, 
+                    it will keep the original definition.
+                </p>
+                <p class="notes-p"><strong>Recursive Functions -></strong> a function that invokes itself until a condition is met.
+                </p>
+                
+            </div>
+            <div class="chapter-div">
+                <h1 class="notes-h1">JavaScript: Novice to Ninja - Chapter 13 AJAX</h1>
+                <p class="notes-p">
+                    The Fetch API uses promises. It has one mandatory argument, which is the URL of the resource to be fetched.
+                </p>
+                <p class="notes-p"><strong>Blog() -></strong> used to read a file of raw data (like an image or a spreadsheet) 
+                    and returns a promise witha a blob object. 
+                </p>
+                <p class="notes-p">FormData() is very useful for uploading files. Before this, it was so hard and would require the 
+                    use of third-party browser plugins. Now, this interface will do all the hard work of creating the necessary 
+                    settings and etc. for us. 
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
