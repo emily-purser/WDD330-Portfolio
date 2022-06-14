@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <title>WDD330 Portfolio</title>
+        <link href="/WDD330-Portfolio/css/styles.css" type="text/css" rel="stylesheet" media="screen">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="/WDD330-Portfolio/js/main.js">
+
+        </script>
+    </head>
+    <body>
+        <div id="wrapper"></div>
+            <header class="portfolio-header">
+                Emily's WDD 330 Portfolio
+            </header>
+            <div class="chapter-div">
+                <h1 class="notes-h1">JavaScript: Novice to Ninja - Chapter 9 The Window Object</h1>
+                <p class="notes-p">
+                   There is not an official standard for BOM. 
+                </p>
+                <p class="notes-p"> 
+                    BOM is for browser environments. Other evironments like Node.js, won't have a window object. They will 
+                    have a global object though.
+                </p>
+                <p class="notes-p">
+                    <strong>window.location -></strong> returns information about the URL. You could use the href property to 
+                    change the page.
+                </p>
+                <p class="notes-p"> 
+                    <strong>window.history -></strong> used to get information about previously visited pages. <br>
+                       -> the .go() method is used to go to specific pages. 0 is the current page, 1 is 1 page forward. -1 is 1 
+                     page back.
+                </p>
+                <p class="notes-p">
+                    <strong>window.screen -> </strong>used to get information about the screen. You can get the height and width using 
+                    the height and width properties. This is most useful for mobile devices.
+                </p>
+                <p class="notes-p">
+                    window.setTimeout() and window.setInterval() accepts a callback function as it's first paramater and a time in milliseconds 
+                    as the second. It will call the callback function after the time passed. For setTimeout(), it will call it once. For setInverval() 
+                    it will call it repeatedly. To get it to stop, use window.clearInterval().    
+                </p>
+                                
+            </div>
+            <div class="chapter-div">
+                <h1 class="notes-h1">JavaScript: Novice to Ninja - Chapter 14 HTML5 APIs</h1>
+                <p class="notes-p">
+                    <strong>data- -></strong> These attributes are custom attributes that are ignored by the browser and 
+                    used to embed data into a web page. Their purpose is to be used by JavaScript.
+                </p>
+                <p class="notes-p">
+                    To access data attributes in JavaScript, you can use the dataset object. An example of this will look like 
+                    (superman.dataset.powers). The data- prefix is dropped. Plus, any hyphens used are replaced with camel-case 
+                    notation. You could also use .getAttribute() for older browsers.
+                </p>
+                <p class="notes-p">
+                    Local storage methods include: getItem() for getting an item, setItem() for adding an item, removeItem() for 
+                    deleting an item, and clear() to remove everything in local storage
+                </p>
+                <p class="notes-p">
+                    The Geolocation API gets the geographical position of a device. It is a property of the navigator objcet.
+                </p>
+                <p class="notes-p">
+                    The Web Workers API can be used to allow processes to be run in the background. To start, use the new Worker() 
+                    constructor function. The parameters include a separate js file to load asynchronously. This doesn't work in 
+                    Chrome, however.
+                </p>
+                <p class="notes-p">
+                    The Notification API can be used to create notifications even when it's not the main tab opened.
+                </p>
+                <p class="notes-p">
+                    video and audio tags were introduced in HTML5. This allows you to add video and audio to your page. If you add the controls 
+                    attribute, it will display the native controls.
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
