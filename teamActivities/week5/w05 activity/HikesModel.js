@@ -45,6 +45,6 @@ getAllHikes() {
 }
 getHikeByName(hikeName) {
   // filter the hikes for the record identified by hikeName and return it
-  return hikeList.find(hike => hike.name === name);
+  return hikeList.find(hike => hike.name === hikeName);
 }
 }

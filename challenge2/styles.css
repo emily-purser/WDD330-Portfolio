@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine&family=Permanent+Marker&display=swap');
+
+html {
+    background-color: white;
+    color: white;
+    font-family: 'Domine', serif;
+}
+form{
+    background-color: red;
+    border-radius: 8%;
+    font-size: 120%;
+    padding:0.30em;
+
+}
+
+h1 {
+    color: blue;
+    font-family: 'Permanent Marker', cursive;
+    text-align: center;
+}
+button {
+    width: 49%;
+    margin-top: 1em;
+    height: 5em;
+    background-color: blue;
+    color: white;
+    border: blue;
+    font-size: 100%;
+}
+input {
+    margin-right: 1em;
+}
+form#loginForm {
+    background-color: blue;
+    border-radius: 0%;
+    padding: 2em;
+    margin: 1em;
+}
+div#loginDiv {
+    margin: auto;
+}
+button#login, button#createUser {
+    background-color: red;
+}
+div#message {
+    background-color: white;
+    color: red;
+    height: 3em;
+    margin: 2em;
+    text-align:center;
+    padding-top: 2em;
+    padding-bottom: 0em;
+    font-size: 1.4em;
+}
