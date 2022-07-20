@@ -58,36 +58,6 @@
   <audio data-key="76" src="sounds/tink.wav"></audio>
 
 <script>
-  // function addEl(dataKey) {
-  //   item = document.querySelector(`div[data-key="${dataKey}"] kbd`);
-  //   item2 = item.textContent;
-  //   console.log(item);
-  //   console.log(item2);
-    
-  //   // addEventListener("keydown", function () {
-  //     console.log(event.key);
-  //     letter = event.key;
-  //     uppercaseLetter = letter.toUpperCase();
-  //     console.log(uppercaseLetter);
-  //     if (uppercaseLetter === item2) {
-  //       var audio = document.querySelector(`audio[data-key="${dataKey}"]`);
-  //       audio.play();
-  //     }
-  //   // })
-  // }
-
-  // const keys = Array.from(document.querySelectorAll('[data-key]'));
-  // // console.log("keys: " + keys);
-  // // keys.forEach(key => addEl(key.data-key,"A"));
-  // // addEl("65");
-  // // addEl("83");
-  // // addEl("71");
-  // // const keys = ["65", "83", "68", "70", "71", "72", "74", "75", "76"];
-  // // keys.forEach(key => addEventListener("keydown", addEl(key)));
-  // keys.forEach(function (key) {
-  //   console.log(key);
-  //   addEventListener("keydown", addEl(key));
-  // })
   function removeTransition(e) {
     if (e.propertyName !== 'transform') return;
     e.target.classList.remove('playing');
@@ -97,14 +67,16 @@
     const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
     const key = document.querySelector(`div[data-key="${e.keyCode}"]`);
     if (!audio) return;
-
-    key.classList.add('playing');
+    console.dir(audio);
     audio.currentTime = 0;
     audio.play();
+    key.classList.add('playing');
   }
 
   const keys = Array.from(document.querySelectorAll('.key'));
-  keys.forEach(key => key.addEventListener('transitionend', removeTransition));
+  keys.forEach(key =>
+    key.addEventListener('transitionend', removeTransition)
+  );
   window.addEventListener('keydown', playSound);
 </script>
 
